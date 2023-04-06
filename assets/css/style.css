@@ -70,6 +70,7 @@ header .container .mobile_menu{
     text-transform: capitalize;
     text-shadow: 0rem 0rem 1rem rgba(0,0,0,0.5);
     margin: 5rem 0rem;
+    line-height: 4rem;
 }
 
 .banner .container button{
