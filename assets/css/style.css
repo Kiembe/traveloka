@@ -1,0 +1,343 @@
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+header .container .logo{
+    width: 15rem;
+}
+
+header .container .nav_bar{
+    display: flex;
+    font-size: 2.1rem;
+}
+
+
+header .container .nav_bar li{
+    font-weight: 550;   
+    margin: 0 2rem;
+}
+
+header .container .nav_bar li:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+header .container .mobile_menu{
+    display: none;
+}
+
+/*  */
+
+.banner{
+    background-image: url(../img/Banner2.jpg);
+    height: 88.9vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner .container {
+    backdrop-filter: blur(0.3rem);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .container h1{
+    font-size: 8rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0rem 0rem 1rem rgba(0,0,0,0.5);
+}  
+
+.banner .container span{
+    color: #CD853F;
+    text-shadow: 0rem 0rem 1rem rgba(255, 255, 255, 0.5);
+
+}
+
+.banner .container p{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 0rem 0rem 1rem rgba(0,0,0,0.5);
+    margin: 5rem 0rem;
+}
+
+.banner .container button{
+    font-size: 2.4rem;    
+    font-weight: 600;
+    padding: 1.5rem 4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;  
+    background: #CD853F;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0rem 0rem 15rem rgba(255, 252, 252,1);
+    animation: button 1.5s infinite alternate;
+    transition: 0.5s;
+}
+
+@keyframes button{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+
+.banner .container button:hover {
+    background-color: rgba(205, 134, 63, 0.712);
+}
+
+/*  */
+
+.review{
+    padding: 15rem 0rem;
+}
+
+.review .container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.review .container .left,
+.review .container .right{
+    width: 50%;
+}
+
+.review .container .left h2{
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.review .container .left p{
+    font-size: 2.4rem;
+    color: #333;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.review .container .right{
+    display: flex;
+    justify-content: center;
+}
+
+.review .container .right img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+/*  */
+
+.voucher{
+    padding: 15rem 0rem;
+    background-color: #efefef;
+}
+
+.voucher .container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.voucher .container .left,
+.voucher .container .right{
+    width: 50%;
+}
+
+.voucher .container .right h2{
+    font-size: 5rem;
+    color: var(--primary-color);
+    padding-bottom: 2rem;
+}
+
+.voucher .container .right ul li{
+    font-size: 2.4rem;
+    padding: 1rem 0rem;
+    color: #333;
+    text-align: justify;
+}
+
+.voucher .container .right span{
+    color: #CD853F;
+    font-weight: 550;
+}
+
+.voucher .container .left{
+    display: flex;
+    justify-content: center;
+}
+
+.voucher .container .left img{
+    max-width: 100%;
+    border-radius: 1rem;
+    min-height: 35rem;
+    object-fit: cover;
+}
+
+/*  */
+
+.service{
+    padding: 10rem 0rem;
+    background: #efefef;
+    margin-bottom: 10rem;
+}
+
+.service .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+}
+
+.service .container .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.service .container .card .top i{
+    font-size: 15rem;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+.service .container .card .bottom h5{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #CD853F;
+    padding: 1rem 0rem;
+}
+
+.service .container .card .bottom p{
+    font-size: 2rem;
+    padding: 0rem 10rem;
+}
+
+
+/*  */
+footer{
+    background-color: #CD853F;
+}
+
+footer .container{
+    display: flex;
+    padding: 5rem 0rem;
+
+}
+
+footer .container .right{
+    width: 60%;
+}
+footer .container .left{
+    width: 40%;
+}
+
+footer .container .left .logo{
+    width: 20rem;
+}
+
+footer .container .left .img{
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+footer .container .left .img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem 3rem;
+}
+
+footer .container .left p{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0rem;
+}
+
+footer .container .right {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .right ul{
+    font-size: 2rem;
+    color: #fff;
+}
+
+footer .container .right ul li{
+    padding: 1rem;
+}
+
+footer .container .right ul li:first-child{
+    font-weight: 550;
+    font-size: 2.8rem;
+
+}
+
+.reveral {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.reveral.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*  */
+
+.hotPlaces{
+    padding: 15rem 0rem;
+}
+
+.hotPlaces .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+}
+
+.hotPlaces h2{
+    font-size: 4rem;
+    color: #CD853F;
+    text-align: center;
+    margin-bottom: 10rem;
+
+}
+
+.hotPlaces .container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotPlaces .container .card img{
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 3rem rgba(0,0,0,0.5);
+}
+
+.hotPlaces .container .card p{
+    font-size: 2rem;
+    padding-top: 5rem;
+    font-weight: 550;
+    text-align: justify;
+}
+
+.callbtn{
+    display: none;
+}
